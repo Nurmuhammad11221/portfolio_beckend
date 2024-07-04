@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="{% static 'bootstap/vendor/bootstrap.min.css' %}" rel="stylesheet">
+
+    {% comment %} <link rel="stylesheet" href="{% static 'vendor/css/bootstrap.css' %}"> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body>
+
+    
+    {% include "./layouts/navbar.html" %} 
+
+    {% block content %}
+    
+    {% endblock content %}
+
+    {% include "./layouts/footer.html" %}
+
+
+
+
+
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+{% comment %} <script src="static/vendor/bootstrap/js/bootstrap.bundle.js"></script> {% endcomment %}
+</body>
+</html>

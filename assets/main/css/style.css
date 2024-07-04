@@ -1,0 +1,283 @@
+/* heebo-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/main/fonts/heebo-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* heebo-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./assets/main/fonts/heebo-v22-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* heebo-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/main/fonts/heebo-v22-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* heebo-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 900;
+    src: url('./assets/main/fonts/heebo-v22-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+:root {
+  --dark-font: #21243D;
+  --btn-color: #FF6464;
+  --link-color: #00A8CC;
+}
+
+.container_cs {
+  max-width: 960px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text_cs {
+  font-family: 'heebo', sans-serif;
+  color: var(--dark-font);
+  font-size: 16px;
+}
+
+.main_title {
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.second_title {
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.detail_title {
+  font-size: 34px;
+  font-weight: 700;
+}
+/* .none_link {
+  text-decoration: none;
+  color: 
+} */
+
+.link_cs {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.link_cs:hover {
+  color: rgb(44, 44, 206);
+}
+
+.nav_cs {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+
+/* ----------------- Home Page Section Begin ----------------- */
+
+.home {
+    height: 75vh;
+}
+
+.btn_cs {
+  background-color: var(--btn-color);
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.cat_text {
+  font-size: 22px;
+}
+
+.btn_cs:hover {
+  background-color: #fc8888;
+  color: #fff;
+}
+
+.active_cs {
+  color: var(--btn-color) !important;
+}
+
+
+/* ----------------- Home Page Section End ----------------- */
+
+
+/* ----------------- Recent Posts Page Section Begin ----------------- */
+.recent_posts {
+  background: #EDF7FA;
+}
+
+.card_cs {
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
+  border: none;
+}
+
+/* ----------------- Recent Posts Page Section End ----------------- */
+
+/* ----------------- Featured Works Section Begin ----------------- */
+.card_year {
+  font-family: 'heebo', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  border-radius: 16px;
+  background: #142850;
+  padding: 5px 8px;
+}
+
+/* ----------------- Featured Works Section End ----------------- */
+
+/* ----------------- Footer Section Begin ----------------- */
+
+.copyright {
+  font-size: 14px;
+}
+
+.social_media a {
+  text-decoration: none;
+}
+
+/* ----------------- Footer Section End ----------------- */
+
+/* ----------------- Recent Posts Page Section Begin ----------------- */
+.recent_posts {
+  background: #EDF7FA;
+}
+
+.card_cs_blog {
+  border-radius: 4px;
+  border: none;
+}
+
+/* ----------------- Recent Posts Page Section End ----------------- */
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .home_mb {
+    display: block;
+  }
+  .home_mb .home_text h1, .home_mb .home_text p {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home_mb {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main_title {
+    font-size: 32px;
+  }
+  
+  .second_title {
+    font-size: 22px;
+  }  
+
+  .cat_text {
+    font-size: 16px;
+  }
+}
+
+
+/* ----------------- Sign Up Page Section Begin ----------------- */
+.box {
+  border-radius: 10px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+  font-family: sans-serif;
+}
+
+input[type="text"],
+input[type="password"], 
+input[type="email"] {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: #999 solid;
+  border-radius: 5px;
+  background: #EDF7FA;
+}
+
+.button {
+  background-color: #008cba;
+  border: none;
+  color: #111;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button {
+  background-color: lightblue;
+  color: black;
+  border: 2px solid #008cba;
+}
+
+.button:hover {
+  background-color: #008cba;
+  color: #333;
+}
+
+.no-underline {
+text-decoration: none;
+}
+
+
+/* ----------------- Sign UP Page Section End ----------------- */
+
+/* ----------------- Profile Page Section Begin ----------------- */
+
+
+/* ----------------- Profile Page Section End ----------------- */
+
+.profile-image{
+  margin-top: 80px;
+  width: 200px;
+  height: 100px;
+  
+}
